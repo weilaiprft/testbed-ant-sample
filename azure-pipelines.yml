@@ -21,4 +21,7 @@ steps:
     testResultsFiles: '**/TEST-*.xml'
 
 - publish: $(System.DefaultWorkingDirectory)/build/app.jar
-  artifact: app.jar
+  artifact: WebApp
+  
+- download: current
+  artifact: WebApp
