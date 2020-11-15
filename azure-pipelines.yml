@@ -19,3 +19,6 @@ steps:
     jdkArchitectureOption: 'x64'
     publishJUnitResults: true
     testResultsFiles: '**/TEST-*.xml'
+
+- publish: $(System.DefaultWorkingDirectory)/build/app.jar
+  artifact: app.jar
